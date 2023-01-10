@@ -8,7 +8,7 @@ namespace ApiCep
     {
         public static async Task Main(string[] args)
         {
-            Console.WriteLine("Informe o id: ");
+            Console.WriteLine("Informe o Cep: ");
             string cep = (Console.ReadLine());
 
             ServicesApi servicesApi = new ServicesApi();
@@ -16,7 +16,7 @@ namespace ApiCep
 
             if (!cepEncontrado.Vericacao)
             {
-                Console.WriteLine("Aluno Encontrado");
+                Console.WriteLine("Cep Encontrado");
 
                 Console.WriteLine("Cep: " + cepEncontrado.Cep);
                 Console.WriteLine("Cidade: " + cepEncontrado.City);
